@@ -6,8 +6,18 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>QUECHUA DICCIONARIO</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <style type="text/css">
+      button:hover span {display:none}
+      button:hover:before {content:"MASKHAY"}
       body {
         margin: 10px;
         white-space: nowrap;
@@ -30,20 +40,23 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
     -->
-    <script src="popup.js"></script>
+    <!--<script src="popup.js"></script>-->
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
-    <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
+    <h1><kbd>Diccionario Espa&ntilde;ol Quechua</kbd></h1>
+    <br>
+    <iv id="jumbotron" >
+     <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Ingresa una palabra">
+      </div>
+      <div id="line">
+        <button type="submit" class="btn btn-warning"><span>BUSCAR</span></button>
+      </div>
+      <br>
+    </form>
+     
     </div>
   </body>
 </html>
