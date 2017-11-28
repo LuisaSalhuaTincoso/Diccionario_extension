@@ -5,11 +5,8 @@
     "version": "1.0",
 
     "browser_action": {
-    "default_icon": "quechua.png",
+    "default_icon": "que.png",
     "default_popup": "popup.html"
-    },
-    "icons":{
-        "64":"quechua.png"
     },
     "permissions": [
     "activeTab",
