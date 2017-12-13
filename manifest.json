@@ -9,7 +9,14 @@
     "default_popup": "popup.html"
     },
     "permissions": [
-    "activeTab",
-    "storage"
-    ]
+      "debugger",
+      "activeTab",
+      "storage"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources": [
+    "assets/css/*",
+    "assets/js/*",
+    "assets/fonts/*",
+    "assets/lib/*"
+   ]
 }

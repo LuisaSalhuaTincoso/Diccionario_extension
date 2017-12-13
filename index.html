@@ -28,29 +28,16 @@
     <!--<script src="popup.js"></script>-->
   </head>
 
-  <body ng-app="dictionaryApp">
-    <h1><kbd>Diccionario Espa&ntilde;ol Quechua</kbd></h1>
-    <br>
-    <div id="jumbotron" ng-controller="dictionary">
-     <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <input type="text" ng-model="word" class="form-control" placeholder="Ingresa una palabra">
-      </div>
-      <div id="line">
-        <button type="submit" ng-click="buscar()" class="btn btn-warning"><span>BUSCAR</span></button>
-      </div>
-      <div id=answer>
-         <label>{{data.name_Quechua}}</label>
-      </div>
-      <br>
-    </form>
-
-    </div>
-
+  <body>
+    <article ng-app="booksInventoryApp">
+      <section ng-controller="booksCtrl">
+        <h2 ng-repeat="book in data.books">{{book.name}}</h2>
+      </section>
+    </article>
     <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/controller.js"></script>
+    <script type="text/javascript" src="js/controller1.js"></script>
 
 
   </body>
